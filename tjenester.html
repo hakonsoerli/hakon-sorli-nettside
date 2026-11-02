@@ -44,6 +44,10 @@
     .profile-detail{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(40px,8vw,110px)}
     .profile-intro .detail-heading{position:static}
     .profile-description{max-width:500px;margin:26px 0 0;font-size:clamp(18px,1.7vw,22px);line-height:1.65}
+    .portfolio-link{display:inline-flex;align-items:center;gap:16px;margin-top:26px;padding:16px 20px;border:1px solid var(--green);font-weight:700;transition:transform .2s ease}
+    .portfolio-link:hover{transform:scale(1.03);text-decoration:none}
+    .portfolio-link:focus-visible{outline:2px solid var(--green);outline-offset:4px}
+    @media(prefers-reduced-motion:reduce){.portfolio-link{transition:none}.portfolio-link:hover{transform:none}}
     .profile-pricing{max-width:720px}
     .price-group+.price-group{margin-top:30px}
     .price-group-title{margin:0;padding:0 0 12px;border-bottom:1px solid rgba(40,70,61,.52);font:700 11px/1.3 var(--heading);letter-spacing:1.2px;text-transform:uppercase}
@@ -91,7 +95,7 @@
     <div class="wrap details">
       <section class="detail profile-detail" id="bedriftsprofil" aria-labelledby="profile-title">
         <div class="profile-intro">
-          <div class="detail-heading"><p class="eyebrow">Google</p><h2 id="profile-title">Google-bedriftsprofil</h2></div>
+          <div class="detail-heading"><h2 id="profile-title">Google-bedriftsprofil</h2></div>
           <p class="profile-description">Jeg hjelper din bedrift med å sette opp eller forbedre Google-bedriftsprofilen, slik at bedriften presenteres tydelig og informasjonen er oppdatert. En ryddig profil gjør det enklere for kunder å se hva du tilbyr og hvordan de kan ta kontakt.</p>
         </div>
         <div class="profile-pricing" aria-label="Priser for Google-bedriftsprofil">
@@ -108,22 +112,23 @@
           <p class="price-note">Foretaket er ikke registrert i Merverdiavgiftsregisteret. Det beregnes derfor ikke merverdiavgift.</p>
         </div>
       </section>
-      <section class="detail profile-detail" id="nettsider" aria-labelledby="websites-title">
+      <section class="detail profile-detail" id="fotografering" aria-labelledby="photography-title">
         <div class="profile-intro">
-          <div class="detail-heading"><p class="eyebrow">Nettside</p><h2 id="websites-title">Nettsider</h2></div>
-          <p class="profile-description">Jeg lager oversiktlige nettsider som fungerer på mobil og datamaskin. Siden samler informasjon om bedriften, tjenestene og hvordan kunder kan ta kontakt. Tydelig og relevant innhold kan bidra til at bedriften blir lettere å finne på nett og gjør det enklere for besøkende å forstå hva dere tilbyr.</p>
+          <div class="detail-heading"><h2 id="photography-title">Fotografering</h2></div>
+          <p class="profile-description">Jeg tilbyr fotografering for bedrifter, privatpersoner og arrangementer. Bildene kan brukes på nettsiden, i sosiale medier og på Google-bedriftsprofilen.</p>
+          <a class="portfolio-link" href="index.html#sosiale-medier">Sjekk ut tidligere arbeid <span aria-hidden="true">→</span></a>
         </div>
-        <div class="profile-pricing" aria-label="Dette kan inngå i en nettside">
+        <div class="profile-pricing" aria-label="Dette kan inngå i et fotooppdrag">
           <div class="price-group">
             <h3 class="price-group-title">Dette kan inngå</h3>
-            <ul class="website-includes"><li>Presentasjon av bedriften og tjenestene</li><li>Mobiltilpasset oppsett</li><li>Kontaktinformasjon og relevante lenker</li><li>Tydelig struktur og innhold tilpasset søk</li></ul>
+            <ul class="website-includes"><li>Bilder av bedriften og lokalene</li><li>Portretter og bilder av ansatte</li><li>Fotografering av arrangementer</li><li>Redigerte bilder levert digitalt</li></ul>
           </div>
           <p class="price-note">Priser kan variere etter innhold og omfang. Ta kontakt hvis du er interessert.</p>
         </div>
       </section>
       <section class="detail profile-detail" id="anmeldelseskort" aria-labelledby="cards-title">
         <div class="profile-intro">
-          <div class="detail-heading"><p class="eyebrow">Anmeldelser</p><h2 id="cards-title">Anmeldelseskort</h2></div>
+          <div class="detail-heading"><h2 id="cards-title">Anmeldelseskort</h2></div>
           <p class="profile-description">Jeg setter opp et fysisk anmeldelseskort for bedriften din, slik at kundene enkelt kan legge igjen en anmeldelse. Kunden holder mobilen mot kortet og kommer rett til anmeldelsessiden. Ingen app eller QR-kode er nødvendig. Kortet kan ligge ved disken eller brukes etter en avtale. Jeg ordner oppsettet og tester lenken. Det er ingen månedlig kostnad, og du trenger ikke å gjøre noe selv.</p>
         </div>
         <div class="profile-pricing" aria-label="Priser for Google-kort">
